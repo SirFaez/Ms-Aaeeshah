@@ -1,0 +1,418 @@
+@font-face {
+  font-family:ComicNeue;
+  src: url(ComicNeue-Regular.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+body{
+  zoom: 1.6;
+}
+.dropdown {
+  display: block;
+  position: fixed;
+  top: 1vh;
+  left: 1vh;
+}
+
+.dropdown button{
+  font-family: ComicNeue;
+  font-size: 2vw;
+  background-color:hsl(0, 69%, 90%) ;
+  color: white;
+  padding: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+
+}
+.dropdown a{
+  font-family: ComicNeue;
+  font-size: 1.4vw;
+  display: block;
+  color: white;
+  background-color:hsl(0, 69%, 80%) ;
+  text-decoration: none;
+  width: 100%;
+  height: auto ;
+  padding: 20px;
+
+}
+.dropdown .menu{
+  display: none;
+  position: absolute;
+  height: auto;
+  width: auto;
+  box-shadow: 4px 4px 3px hsl(0, 69%, 80%);
+
+}
+.dropdown:hover .menu{
+  display: block;
+}
+.dropdown:hover button{
+  background-color:hsl(0, 69%, 40%) ;
+}
+.dropdown a:hover{
+  background-color:hsl(0, 69%, 40%);
+}
+
+
+
+
+
+.body_OEE{
+  background-color: hsl(0, 69%, 85%);
+}
+.title_OEE{
+  font-family: ComicNeue;
+  font-size: 3vw;
+  color: white;
+  background-color: hsl(0, 69%, 90%);
+  text-align: center;
+  padding: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 20px;
+}
+.text_OEE{
+  font-family: ComicNeue;
+  font-size: 2.2vw;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  width: 60%;
+  height: 80%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#Hi {
+background-image: url(izzan/pic21.jpg);
+background-position: center center;
+background-size: cover;
+color: rgba(231, 230, 152, 0.9);
+}
+
+#Hi::after {
+content: 'Hi'
+}
+#Princess {
+background-image: url(izzan/pic18.jpg);
+background-position: center center;
+background-size: cover;
+color: rgba(231, 230, 152, 0.9);
+}
+
+#Princess::after {
+content: 'Princess'
+}
+
+
+
+
+
+
+.body_personality{
+  background-color: hsl(0, 69%, 85%);
+}
+.title_personality{
+  font-family: ComicNeue;
+  font-size: 3vw;
+  color: white;
+  background-color: hsl(0, 69%, 90%);
+  text-align: center;
+  padding: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 20px;
+}
+.text_together{
+  font-family: ComicNeue;
+  font-size: 2.2vw;
+  color: white;
+  background-color: hsl(0, 69%, 90%);
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  width: 60%;
+  height: 80%;
+  margin-top: 3%;
+  margin-bottom: -1px;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 16px;
+}
+.body_personality ol{
+  background-color: hsl(0, 69%, 85%);
+  margin: 2%;
+  padding: 0;
+
+}
+.body_personality li{
+  font-family: ComicNeue;
+  font-size: 2vw;
+  width: 100%;
+  color: white;
+  padding: 20px;
+  display: block;
+  text-align: center;
+  width: 60%;
+  height: 80%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.body_personality li::marker {
+  content: "-";
+}
+.izzan {
+  width: 300px;
+  height: 300px;
+  /* center content using flex box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overlay */
+  box-shadow: 0 0 0 400px inset, 0 0 5px grey;
+  /* hover out transition */
+  transition: box-shadow 2s;
+  margin: auto;
+}
+
+.izzan::after {
+  width: 80%;
+  height: 80%;
+  display: block;
+  white-space: pre;
+  font: 30pt ComicNeue;
+  color: rgb(49, 47, 47);
+  border: 7px solid;
+  text-align: center;
+  /* center content using flex box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* hover out transition */
+  transition: opacity 1s .5s;
+}
+
+
+/* reveal izzan picture on hover */
+
+.izzan:hover {
+  box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
+  transition: box-shadow 1s;
+}
+
+
+/* hide izzan name on hover */
+
+.izzan:hover::after {
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+#I {
+  background-image: url(izzan/pic5.jpg);
+  background-position: center center;
+  background-size: cover;
+  color: rgba(231, 230, 152, 0.9);
+}
+
+#I img{
+  flex: 1;
+}
+
+#I::after {
+  content: 'I';
+}
+
+#Love {
+  background-image: url(izzan/pic9.jpg);
+  background-position: center center;
+  background-size: cover;
+  color: rgba(231, 230, 152, 0.9);
+}
+
+#Love::after {
+  content: 'Love'
+}
+
+#You {
+  background-image: url(izzan/pic11.jpg);
+  background-position: center center;
+  background-size: cover;
+  color: rgba(231, 230, 152, 0.9);
+}
+
+#You::after {
+  content: 'You'
+}
+
+#wrapper {
+  width: 500px;
+  height: 500px;
+  margin:  auto;
+}
+
+
+
+
+
+
+
+.body_LD{
+  background-color:hsl(0, 69%, 85%);
+}
+.title_LD{
+  font-family: ComicNeue;
+  font-size: 3vw;
+  color: white;
+  background-color: hsl(0, 69%, 90%);
+  text-align: center;
+  padding: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 20px;
+}
+.Likes_Dislikes_text{
+  font-family: ComicNeue;
+  font-size: 3vw;
+  color: white;
+  background-color: hsl(0, 69%, 90%);
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  width: 60%;
+  height: 80%;
+  margin-bottom: -10%;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 16px;
+}
+.body_LD ol{
+  background-color: hsl(0, 69%, 85%);
+  width: 100%;
+  padding: 10px;
+}
+.body_LD li{
+  font-family: ComicNeue;
+  font-size: 2vw;
+  width: 100%;
+  color: white;
+  padding: 8px;
+  display: block;
+  text-align: center;
+  width: 60%;
+  height: 80%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+#My {
+background-image: url(izzan/pic3.jpg);
+background-position: center center;
+background-size: cover;
+color: rgba(231, 230, 152, 0.9);
+}
+
+#My::after {
+content: 'My'
+}
+#Sweet {
+background-image: url(izzan/pic8.jpg);
+background-position: center center;
+background-size: cover;
+color: rgba(231, 230, 152, 0.9);
+}
+
+#Sweet::after {
+content: 'Sweet'
+}
+#Girl {
+background-image: url(izzan/pic1.jpg);
+background-position: center center;
+background-size: cover;
+color: rgba(231, 230, 152, 0.9);
+}
+
+#Girl::after {
+content: 'Girl'
+}
+
+
+
+
+
+
+
+
+.body_WayForward{
+  background-color:hsl(0, 69%, 85%);
+}
+.title_wayforward{
+  font-family: ComicNeue;
+  font-size: 3vw;
+  color: white;
+  background-color: hsl(0, 69%, 90%);
+  text-align: center;
+  padding: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 20px;
+}
+.text_WF{
+  font-family: ComicNeue;
+  font-size: 2vw;
+  color: white;
+  padding: 20px;
+  display: inline-block;
+  text-align: center;
+  width: 60%;
+  height: 90%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.picture61619 {
+  max-width: 470px;
+  height: 350px;
+  margin-inline: auto; 
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 15px;
+}
+.picture61619 img{
+  flex: 0.9;  
+  overflow: hidden; 
+  border-radius: 0.9rem;
+  object-fit: cover;
+}
+img {
+max-width: 100%;
+}
+.gallery_dump {
+max-width: 1100px;
+height: 200px;
+margin-inline: auto; /*maintain horizontal alignment*/ 
+display: flex;
+justify-content: center;
+gap: 1rem;
+padding: 15px;
+margin-left: 30px;
+margin-right: 30px;
+}
+.gallery_panel_dump {
+flex: 1.2; /*ensure consistent aspect ratio*/ 
+overflow: hidden; /*ensures images respect the boudaries of their panel, resulting in smoother rounded corners*/
+border-radius: 0.75rem;
+cursor: pointer;
+transition: flex 0.5s ease-in-out;
+}
+.gallery_panel_dump img {
+width:100%;
+height: 100%;
+object-fit: cover;/*ensures image entires the entire space without needing to stretch, while maintaining their original aspect ratio*/
+}
+.gallery_panel_dump:hover {
+flex: 1.8;
+}

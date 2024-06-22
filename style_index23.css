@@ -1,0 +1,543 @@
+@font-face {
+    font-family:ComicNeue;
+    src: url(ComicNeue-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+body{
+    zoom: 1.6;
+}
+.body_index{
+    background-color:hsl(0, 69%, 86%);
+}
+header{
+    font-family: ComicNeue;
+    font-size: 2vw;
+    color: white;
+    background-color: hsl(0, 69%, 90%);
+    text-align: center;
+    padding: 2%;
+    border-radius: 10px;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0, 69%, 86%);
+    padding: 0px;
+    margin: 0px;
+}
+.navbar a{
+    font-family: ComicNeue;
+    font-size: 2vw;
+    color: white;
+    text-decoration: none;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    padding: 15px;
+    display: block;
+    text-align: center;
+
+}
+.navbar a:hover{
+    background-color: hsl(33, 98%, 80%);
+}
+.bottomtext p{
+    font-family: ComicNeue;
+    background-color: hsl(0, 69%, 89%) ;
+    font-size: 1.1vw;
+    color: white;
+    padding: 2%;
+    text-align: center;
+    margin-left: 17%;
+    margin-right: 17%;
+}
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 28px;
+    
+}
+.fa-brands.fa-instagram {
+    background: #833ab4;
+    background: linear-gradient(
+      to right,
+      #833ab4,#fd1d1d,#fcb045
+    );
+    margin-top: 6%;
+    padding: 8px;
+    font-size: 10vw;
+    border-radius: 8px 8px 8px 8px;
+
+}
+.fa-brands.fa-twitter {
+    color: #1DA1F2;
+    font-size: 10vw;
+    margin-top: 6%;
+    padding: 8px;
+
+}
+.fa-brands.fa-tiktok {
+    color: white;
+    font-size: 10vw;
+    margin-top: 6%;
+    padding: 8px;
+}
+.fa-brands.fa-spotify{
+    color: #1DB954;
+    font-size: 10vw;
+    margin-top: 6%;
+    padding: 8px;
+}
+img {
+    max-width: 100%;
+}
+.gallery {
+    max-width: 1200px;
+    height: 500px;
+    margin-inline: auto; /*maintain horizontal alignment*/ 
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 15px;
+}
+.gallery_panel {
+    flex: 1.5; /*ensure consistent aspect ratio*/ 
+    overflow: hidden; /*ensures images respect the boudaries of their panel, resulting in smoother rounded corners*/
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: flex 0.5s ease-in-out;
+}
+.gallery_panel img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;/*ensures image entires the entire space without needing to stretch, while maintaining their original aspect ratio*/
+}
+.gallery_panel:hover {
+    flex: 2.5;
+}
+
+
+
+
+
+
+
+.body_Biography{
+    background-color:hsl(0, 69%, 86%);
+}
+.body_Biography .title_Biography{
+    font-family: ComicNeue;
+    font-size: 2vw;
+    color: white;
+    background-color: hsl(0, 69%, 90%);
+    text-align: center;
+    padding: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 20px;
+}
+.picture14 {
+    max-width: 470px;
+    height: 350px;
+    margin-inline: auto; 
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 15px;
+}
+.picture14 img{
+    flex: 1.5;  
+    overflow: hidden; 
+    border-radius: 0.9rem;
+    object-fit: cover;
+}
+.picture14 img {
+    --s: 15px;  /* size of the frame */
+    --b: 2px;   /* border thickness */
+    --w: 265px; /* width of the image */
+    --c: #7B3B3B;
+    
+    width: var(--w);
+    aspect-ratio: 1;
+    object-fit: cover;
+    padding: calc(2*var(--s));
+    --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
+    background:
+      linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+      linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
+    outline: calc(var(--w)/2) solid #0009;
+    outline-offset: calc(var(--w)/-2 - 2*var(--s));
+    transition: .4s;
+    cursor: pointer;
+  }
+.picture14 img:hover{
+    outline: var(--b) solid var(--c);
+    outline-offset: calc(var(--s)/-2);
+    --_i: calc(100% - 2*var(--s));
+  }
+.content .picture15 {
+    max-width: 500px;
+    height: 320px;
+    margin-inline: auto; 
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 15px;
+}
+.content .picture15 img{
+    flex: 1.5;  
+    overflow: hidden; 
+    border-radius: 0.75rem;
+    object-fit: cover;
+}
+.content .picture15 img{
+    --s: 15px;  /* size of the frame */
+    --b: 2px;   /* border thickness */
+    --w: 240px; /* width of the image */
+    --c: #7B3B3B;
+    
+    width: var(--w);
+    aspect-ratio: 1;
+    object-fit: cover;
+    padding: calc(2*var(--s));
+    --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
+    background:
+      linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+      linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
+    outline: calc(var(--w)/2) solid #0009;
+    outline-offset: calc(var(--w)/-2 - 2*var(--s));
+    transition: .4s;
+    cursor: pointer;
+  }
+.content .picture15 img:hover{
+    outline: var(--b) solid var(--c);
+    outline-offset: calc(var(--s)/-2);
+    --_i: calc(100% - 2*var(--s));
+  }
+
+.body_Biography ul{
+    list-style-type: none;
+    background-color: hsl(0, 69%, 86%);
+    padding: 0px;
+    margin: 0px;
+
+}
+.body_Biography li{
+    font-family: ComicNeue;
+    font-size: 2vw;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    margin:auto;
+    
+}
+.body_Biography .content li::before{
+    content:"💜 ";
+}
+.gallery_cat {
+    max-width: 1200px;
+    height: 390px;
+    margin-inline: auto; /*maintain horizontal alignment*/ 
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.gallery_panel_cat {
+    flex: 1.5; /*ensure consistent aspect ratio*/ 
+    overflow: hidden; /*ensures images respect the boudaries of their panel, resulting in smoother rounded corners*/
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: flex 0.5s ease-in-out;
+}
+.gallery_panel_cat img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;/*ensures image entires the entire space without needing to stretch, while maintaining their original aspect ratio*/
+}
+.gallery_panel_cat:hover {
+    flex: 2.5;
+}
+.dropdown {
+    display: block;
+    position: fixed;
+    top: 1vh;
+    left: 1vh;
+}
+
+.dropdown button{
+    font-family: ComicNeue;
+    font-size: 2vw;
+    background-color:hsl(0, 69%, 90%) ;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+
+}
+.dropdown a{
+    font-family: ComicNeue;
+    font-size: 1.4vw;
+    display: block;
+    color: white;
+    background-color:hsl(0, 69%, 80%) ;
+    text-decoration: none;
+    width: 100%;
+    height: auto ;
+    padding: 20px;
+
+}
+.dropdown .menu{
+    display: none;
+    position: absolute;
+    height: auto;
+    width: auto;
+    box-shadow: 4px 4px 3px hsl(0, 69%, 80%)  ;
+}
+.dropdown:hover .menu{
+    display: block;
+}
+.dropdown:hover button{
+    background-color:hsl(0, 69%, 40%) ;
+}
+.dropdown a:hover{
+    background-color:hsl(0, 69%, 40%);
+}
+
+
+
+
+.body_HowWeMet1{
+    background-color:hsl(0, 69%, 86%);
+}
+.body_HowWeMet1 .text1{
+    font-family: ComicNeue;
+    font-size: 3vw;
+    color: white;
+    background-color: hsl(0, 69%, 90%);
+    text-align: center;
+    padding: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 20px;
+}
+.body_HowWeMet1 .text2{
+    font-family: ComicNeue;
+    font-size: 2vw;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 60%;
+    height: 80%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.picture20 {
+    max-width: 330px;
+    height: 420px;
+    margin-inline: auto; 
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 10px;
+}
+.picture20 img{
+    flex: 1.5;  
+    overflow: hidden; 
+    border-radius: 0.9rem;
+    object-fit: cover;
+}
+.picture20 img {
+    --s: 15px;  /* size of the frame */
+    --b: 2px;   /* border thickness */
+    --w: 265px; /* width of the image */
+    --c: #7B3B3B;
+    
+    width: var(--w);
+    aspect-ratio: 1;
+    object-fit: cover;
+    padding: calc(2*var(--s));
+    --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
+    background:
+      linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+      linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
+    outline: calc(var(--w)/2) solid #0009;
+    outline-offset: calc(var(--w)/-2 - 2*var(--s));
+    transition: .4s;
+    cursor: pointer;
+  }
+.picture20 img:hover{
+    outline: var(--b) solid var(--c);
+    outline-offset: calc(var(--s)/-2);
+    --_i: calc(100% - 2*var(--s));
+  }
+  
+
+
+.body_HowWeMet2{
+    background-color:hsl(0, 69%, 86%);
+}
+.body_HowWeMet2 .text1{
+    font-family: ComicNeue;
+    font-size: 3vw;
+    color: white;
+    background-color: hsl(0, 69%, 90%);
+    text-align: center;
+    padding: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.body_HowWeMet2 .text2{
+    font-family: ComicNeue;
+    font-size: 2vw;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 60%;
+    height: 80%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.strawberry_cake{
+    position: relative;
+}
+.strawberry_cake img{
+    max-width: 260px;
+    height: 280px;
+    margin-inline: auto; 
+    gap: 1rem;
+    display: none;
+    padding: 15px;
+    flex: 1.5; 
+    overflow: hidden; 
+    border-radius: 0.9rem;
+    object-fit: cover;
+}
+span{
+    font-family: ComicNeue;
+    font-size: 2vw;
+    color: black;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 60%;
+    height: 80%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+span:hover {
+    cursor: pointer;
+}
+.strawberry_cake img {
+    --s: 15px;  /* size of the frame */
+    --b: 2px;   /* border thickness */
+    --w: 265px; /* width of the image */
+    --c: #7B3B3B;
+    
+    width: var(--w);
+    aspect-ratio: 1;
+    object-fit: cover;
+    padding: calc(2*var(--s));
+    --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
+    background:
+      linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+      linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
+    outline: calc(var(--w)/2) solid #0009;
+    outline-offset: calc(var(--w)/-2 - 2*var(--s));
+    transition: .4s;
+    cursor: pointer;
+  }
+.strawberry_cake span:hover + img{
+    display: block;
+    outline: var(--b) solid var(--c);
+    outline-offset: calc(var(--s)/-2);
+    --_i: calc(100% - 2*var(--s));
+      
+}
+
+.picture10 {
+    max-width: 570px;
+    height: 350px;
+    margin-inline: auto; 
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 15px;
+}
+.picture10 img{
+    flex: 1.2;  
+    overflow: hidden; 
+    border-radius: 0.9rem;
+    object-fit: cover;
+}
+.picture10 img {
+    --s: 15px;  /* size of the frame */
+    --b: 2px;   /* border thickness */
+    --w: 265px; /* width of the image */
+    --c: #7B3B3B;
+    
+    width: var(--w);
+    aspect-ratio: 1;
+    object-fit: cover;
+    padding: calc(2*var(--s));
+    --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
+    background:
+      linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+      linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
+    outline: calc(var(--w)/2) solid #0009;
+    outline-offset: calc(var(--w)/-2 - 2*var(--s));
+    transition: .4s;
+    cursor: pointer;
+  }
+.picture10 img:hover{
+    outline: var(--b) solid var(--c);
+    outline-offset: calc(var(--s)/-2);
+    --_i: calc(100% - 2*var(--s));
+  }
+
+
+
+
+
+
+
+
+
+
+.pagination {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+.pagination a{
+    font-family: ComicNeue;
+    font-size: 30px;
+    text-decoration: none;
+    color:hsl(34, 100%, 97%);
+    width: 50px;
+    height: 50px;
+    padding: 8px 8px;
+
+
+}
+.pagination a.active{
+    background-color:hsl(0, 69%, 90%) ;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.pagination a:hover:not(.active){
+    background-color:hsl(0, 69%, 80%) ;
+    border-radius: 10px;
+}
